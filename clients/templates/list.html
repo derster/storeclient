@@ -1,0 +1,10 @@
+
+{% include 'partials/header.html'%}
+<table class="table table-striped">
+
+
+  {% for client in clients %}
+    <tr> <td>{{client.name}} - {{client.email}} <a href="/clients/details/{{client.id}}">Détails</a></td></tr>
+  {% endfor%}
+</table>
+{% include 'partials/footer.html'%}
